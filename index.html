@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="reset.css">
-<link rel="stylesheet" type="text/css" href="style.css">
-<title>HTML5サンプル</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Jquery -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Jquery Mobile -->
+  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.css" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+
+  <title>課題</title>
 </head>
 <body>
-<p>HTML5で作成しました！</p>
+  <div id="wrapper">
+
+    <div id="headerVisual">
+      <header id="header">
+        <h1 id="headerLogo">SAMPLE</h1>
+        <nav>
+          <ul class="menu">
+            <li class="menuInner"><a href="">HOME</a></li>
+            <li class="menuInner"><a href="">ABOUT</a></li>
+            <li class="menuInner"><a href="">PORTFOLIOS</a></li>
+            <li class="menuInner"><a href="">TEAM</a></li>
+            <li class="menuInner"><a href="">BLOG</a></li>
+            <li class="menuInner"><a href="">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="visual">
+        <div id="visualText">
+          <p>SAMPLE SAMPLE</p>
+          <p>THE HTML CORDING SAMPLE SITE</p>
+          <a href="">CONTACT</a>
+        </div>
+      </div><!--visual-->
+    </div><!-- headerVisual -->
+
+    <div id="content">
+      <div class="about">
+        <div class="aboutText">
+          <h2>KNOW ABOUT</h2>
+          <p>株式会社サンプルは、気の利いたデザインと気持ちのいいシステムを追求するWEB制作会社です</p>
+        </div><!-- about_text -->
+        <section id="aboutInner">
+          <img src="images/consultancy_logo.png">
+          <h3>COMSULTANCY</h3>
+          <p>問題の解決策となる戦略的WEBサイトを提案するために、顧客利益最大かの実現できる最適なサービスをたしかな根拠で提供致します。</p>
+        </section>
+        <section id="aboutInner">
+          <img src="images/marketing_logo.png">
+          <h3>MAKETING</h3>
+          <p>大型サイト〜LP制作・SEO・リスティング広告等を最大限活かせる「知識」と「分析力」を強みにするWebサイト制作とWebマーケティングを行っております。</p>
+        </section>
+        <section id="aboutInner">
+          <img src="images/research_logo.png">
+          <h3>REASERCH</h3>
+          <p>Webマーケティングの戦略シナリオ設計から、リード獲得・育成プロセスの構築、さらにはそれを支えるデータ活用、人材育成、社内知識の確立までフルサポートします。</p>
+        </section>
+      </div><!-- about -->
+    </div><!-- content -->
+
+    <footer id="footer">
+      <p class="copyright"><small>&copy; Sample All Rights Reserved</small></p>
+    </footer>
+
+  </div><!-- wrapper -->
+
 </body>
 </html>
