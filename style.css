@@ -1,69 +1,154 @@
+/* default */
+
+
+
+.smallFont {
+  font-size: 12px;
+}
+
+.largeFont {
+  font-size: 20px;
+}
+
+
+.headerText {
+  color: #7b6c63;
+}
+
+
+.text {
+  color: #949494;
+}
+
+
 /* common */
 .layoutInner {
   margin: 0 auto;
   max-width: 70%;
 }
 
-.alignCenter {
-  text-align: center;
-}
 
 /* layout */
 #body {
   width:100%;
+  height: 100%;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.2em;
+  font-family: "Helvetica Neue", Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
-#headerVisual {
+#header {
   width: 100%;
+  height: 50px;
+  background-color: #000;
+}
+
+.headerInner {
+  padding-top: 15px;
+}
+
+.visual {
+  width: 100%;
+  height: 400px;
   background-image: url(images/bg.png);
+  background-position: 0 -50px;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
-#header {
-  height: 60px;
-  background-color: rgba(200,200,200,0.4);
-}
-
-#headerInner {
-  padding: 10px 0;
-}
-
-#visual {
-  max-height: 450px;
-}
-
-#visualInner {
-  padding: 15% 0;
+.visualInner {
 }
 
 #content {
+  width: 100%;
   height: auto;
 }
 
-#contentInner {
+.contentInner {
   padding: 50px 0;
 }
 
 #footer {
-  height: 20px;
-  padding: 10px 0;
+  width: 100%;
+  height: 40px;
   background-color: #000;
 }
 
-/* parts */
-.menu {
-  display: table;
-  table-layout: fixed;
+#footerInner {
+  padding: 10px 0;
 }
 
-.menuInner {
+
+/* parts */
+.headerLogo {
+  float: left;
+  width: 50%;
+  font-size: 24px;
+  color: #FFF;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.menu {
+  display: table;
+  table-layout: auto;
+  width: 50%;
+}
+
+.menuList {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 }
 
-.copyright {
-  color: rgba(200, 200, 200, 0.4);
+.menuInner {
+  font-size: 12px;
+  color: #FFF;
+  font-family: sans-serif;
 }
 
+.menuInner:hover {
+  border-bottom: 3px solid #7b6c63;
+  padding-bottom: 4px;
+}
+
+.visualContact {
+  border: solid;
+  padding: 10px;
+  background-color: rgba(200,200,200,0.4);
+}
+
+.about {
+  text-align: center;
+}
+
+.aboutContents {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.aboutInner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.aboutInner:first-child {
+  padding-left: 0;
+}
+
+
+
+.copyright {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.smallFont {
+  font-size: 12px;
+  color: #4d4d4d;
+}
