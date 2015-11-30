@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!--[if lt IE 9]>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
   <!-- Jquery -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <!-- Jquery Mobile -->
-  <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.css" />
-  <script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js?ver=3.8.1"></script>
+  <script type="text/javascript" src="navbar.js"></script>
 
   <title>課題</title>
 </head>
@@ -19,6 +20,11 @@
       <div class="headerInner layoutInner">
         <h1 class="headerLogo">SAMPLE</h1>
         <nav>
+          <div class="toggle">
+            <span class="toggleBar"></span>
+            <span class="toggleBar"></span>
+            <span class="toggleBar"></span>
+          </div>
           <ul class="menu">
             <li class="menuList"><a class="menuInner" href="">HOME</a></li>
             <li class="menuList"><a class="menuInner" href="">ABOUT</a></li>
@@ -35,7 +41,9 @@
       <div class="visualInner layoutInner">
         <div class="visualText">
           <p>SAMPLE SAMPLE</p>
-          <p class="visualTitle">THE <span class="visualTitleColor">HTML</span> CORDING</br>SAMPLE <span class="visualTitleColor">SITE</span></p>
+          <div class="visualTitle">
+            <p>THE <span class="visualTitleColor">HTML</span> CORDING</p><p>SAMPLE <span class="visualTitleColor">SITE</span></p>
+          </div>
           <a class="visualContact" href=""><span class="visualContactText">CONTACT</span></a>
         </div>
       </div><!--visualInner-->
@@ -47,7 +55,7 @@
           <div class="aboutInner">
             <h2 class="aboutTitle">KNOW ABOUT US</h2>
             <hr class="aboutTitleUnderLine">
-            <p class="aboutText">株式会社サンプルは、気の利いたデザインと<br>気持ちのいいシステムを追求するWEB制作会社です。</p>
+            <p class="aboutText">株式会社サンプルは、気の利いたデザインと気持ちのいいシステムを追求するWEB制作会社です。</p>
           </div><!-- aboutText -->
           <div class="business">
             <section class="businessInner">
