@@ -1,6 +1,6 @@
 $(function(){
   $(".toggle").click(function(){
-    $(".menu").slideToggle();
+    $(".menu").slideToggle(10);
     return false;
   });
 

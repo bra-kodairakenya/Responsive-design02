@@ -1,15 +1,7 @@
 /* common */
-.layoutInner {
-  margin: 0 auto;
-  max-width: 1040px;
-  width: 80%;
-}
-
-/* layout */
 #body {
   width:100%;
   height: 100%;
-  font-size: 16px;
   color: #000;
   font-family: "Helvetica Neue", Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
@@ -21,8 +13,7 @@
 }
 
 .headerInner {
-  height: 35px;
-  padding-top: 15px;
+  height: 50px;
   position: relative;
 }
 
@@ -37,31 +28,46 @@
 
 #footer {
   width: 100%;
-  height: 40px;
+  height: auto;
   background-color: #000;
 }
 
-#footerInner {
-  padding: 10px 0;
+.footerInner {
+  height: 30px;
+  padding-top: 10px;
 }
 
 
-/* parts */
+
+/* layout */
+.body {
+  font-size: 16px;
+}
+
+.layoutInner {
+  margin: 0 auto;
+  max-width: 1040px;
+  width: 90%;
+}
+
+
+/*============ parts ==========*/
+/* header */
 .headerLogo {
   float: left;
+  padding-top: 15px;
   font-size: 24px;
   color: #FFF;
   font-weight: 400;
   letter-spacing: 0.08em;
 }
 
-.nav {
-
-}
-
 .menu {
   display: none;
-  margin-top: 35px;
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0;
 }
 
 .menuList {
@@ -88,7 +94,7 @@
   height: 30px;
   background: #000;
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 0;
 }
 
@@ -96,32 +102,38 @@
   display: block;
   width: 30px;
   height: 0;
-  margin-top: 5px;
+  margin-bottom: 5px;
   border: 0;
   border-bottom: solid 3px #FFF;
 }
 
+/* visual */
 .visual {
   width: 100%;
-  height: 450px;
+  height: auto;
   background-image: url(images/bg.png);
-  background-position: 0 -50px;
-  background-size: cover;
+  background-position: left top;
+  background-size: 100% 150%;
   background-repeat: no-repeat;
 }
 
 .visualInner {
-  padding-top: 130px;
+  height: 350px;
 }
 
 .visualText {
+  padding-top: 100px;
   color: #FFF;
 }
 
+.visualSubTitle {
+  display: none;
+}
+
 .visualTitle {
-  margin: 5px 0 20px 0;
-  font-size: 40px;
-  font-weight: 400;
+  margin-bottom: 50px;
+  font-size: 28px;
+  font-weight: 300;
   line-height: 1.2em;
   letter-spacing: 0.08em;
 }
@@ -133,7 +145,8 @@
 .visualContact {
   display: block;
   width: 200px;
-  padding: 15px 0px;
+  height: 50px;
+  margin: 0 auto;
   text-align: center;
   background-color: rgba(200,200,200,0.2);
 }
@@ -143,6 +156,8 @@
 }
 
 .visualContactText {
+  display: block;
+  padding-top: 15px;
   color: #FFF;
 }
 
@@ -150,22 +165,21 @@
 }
 
 .aboutInner {
-  width: 45%;
-  margin: 0 auto;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .aboutTitle {
   padding-bottom: 20px;
-  font-size: 30px;
+  font-size: 24px;
   color: #7b6c63;
   font-weight: 400;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.1em;
 }
 
 .aboutTitleUnderLine {
   display: block;
-  width: 60px;
+  width: 40px;
   height: 1px;
   margin: 0 auto;
   padding-bottom: 20px;
@@ -174,26 +188,25 @@
 }
 
 .aboutText {
-  padding-bottom: 50px;
   color: #000;
-  line-height: 1.6em;
+  line-height: 1.4em;
 }
 
 .business {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
+  text-align: center;
 }
 
 .businessInner {
-  display: table-cell;
-  vertical-align: baseline;
-  text-align: center;
-  padding-left: 10px;
+  margin-bottom: 30px;
 }
 
-.businessInner:first-child {
-  padding-left: 0;
+.businessInner:last-child {
+  margin-bottom: 0;
+}
+
+.businessInnerImg {
+  width: 20px;
+  height: auto;
 }
 
 .businessInnerTitle {
@@ -203,14 +216,13 @@
 }
 
 .businessInnerText {
-  font-size: 13px;
+  font-size: 14px;
   color: #949494;
-  line-height: 1.6em;
+  line-height: 1.5em;
 }
 
 .copyright {
   text-align: center;
-  padding-top: 10px;
 }
 
 .smallFont {
