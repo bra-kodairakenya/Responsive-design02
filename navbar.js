@@ -6,7 +6,7 @@ $(function(){
 
   $(window).resize(function(){
     var win = $(window).width();
-    var size = 780;
+    var size = 767;
     if(win > size){
       $(".menu").show();
     } else {
