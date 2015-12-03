@@ -1,0 +1,167 @@
+/* PC Size  */
+@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+.layoutInner {
+  margin: 0 auto;
+  width: 85%;
+}
+}
+
+@media screen and (min-width: 961px) {
+.layoutInner {
+  margin: 0 auto;
+  max-width: 1040px;
+  width: 70%;
+}
+}
+
+/* header */
+.headerLogo {
+  float: left;
+  padding-top: 15px;
+  font-size: 24px;
+  color: #FFF;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+/* menu */
+
+.nav {
+  float: right;
+  padding-top: 15px;
+  .menu {
+    display: table;
+    table-layout: auto;
+    .menuList {
+      display: table-cell;
+      vertical-align: top;
+      text-align: right;
+      padding-left: 20px;
+      .menuInner {
+        font-size: 14px;
+        color: #FFF;
+        font-weight: 300;
+      }
+      .menuInner:hover {
+        border-bottom: 3px solid #7b6c63;
+        padding-bottom: 4px;
+      }
+    }
+  }
+}
+
+
+
+/* visual */
+.visual {
+  width: 100%;
+  height: auto;
+  background-image: url(images/bg.png);
+  background-position: 0 30%;
+  background-size: 100% 150%;
+  background-repeat: no-repeat;
+  .visualInner {
+    height: 450px;
+    .visualText {
+      padding-top: 100px;
+      color: #FFF;
+      .visualTitle {
+        margin: 5px 0 30px 0;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1.2em;
+        letter-spacing: 0.08em;
+        .visualTitleColor {
+          color: #7b6c63;
+        }
+      }
+      .visualContact {
+        display: block;
+        width: 200px;
+        padding: 15px 0px;
+        text-align: center;
+        background-color: rgba(200,200,200,0.2);
+        .visualContactText {
+          color: #FFF;
+        }
+      }
+      .visualContact:hover {
+        background-color: rgba(200,200,200,0.4);
+      }
+    }
+  }
+}
+
+
+/* content */
+.about {
+  width: 100%;
+  height: auto;
+  .aboutInner {
+    width: 400px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    .aboutTitle {
+      padding-bottom: 20px;
+      font-size: 30px;
+      color: #7b6c63;
+      font-weight: 400;
+      letter-spacing: 0.09em;
+    }
+    .aboutTitleUnderLine {
+      display: block;
+      width: 60px;
+      height: 1px;
+      margin: 0 auto;
+      padding-bottom: 20px;
+      border: 0;
+      border-top: 3px solid #7b6c63;
+    }
+    .aboutText {
+      color: #000;
+      line-height: 1.6em;
+    }
+  }
+}
+
+.business {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  .businessInner {
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+    padding-left: 20px;
+    .businessInnerImg {
+      width: 30px;
+      height: 30px;
+    }
+    .businessInnerTitle {
+      padding: 10px 0;
+      font-weight: 300;
+      letter-spacing: 0.08em;
+    }
+    .businessInnerText {
+      font-size: 13px;
+      color: #949494;
+      line-height: 1.6em;
+    }
+  }
+  .businessInner:first-child {
+    padding-left: 0;
+  }
+}
+
+/* footer */
+.copyright {
+  text-align: center;
+  .smallFont {
+    font-size: 12px;
+    color: #4d4d4d;
+  }
+}
+
+}
