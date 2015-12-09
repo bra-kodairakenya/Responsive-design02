@@ -58,9 +58,9 @@
 .visual {
   width: 100%;
   height: auto;
-  background-image: url(images/bg.png);
-  background-position: 0 30%;
-  background-size: 100% 150%;
+  background-image: url(images/pc_bg.png);
+  background-position: left top;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   .visualInner {
     height: 675px;
@@ -85,16 +85,18 @@
       .visualContact {
         display: block;
         width: 265px;
-        padding: 24px 0px;
+        height: 60px;
         font-size: 12px;
         text-align: center;
-        background-color: rgba(68, 57, 45, 0.2);
+        background-color: rgba(200, 200, 200, 0.1);
         .visualContactText {
+          display: block;
+          padding-top: 25px;
           color: #FFF;
         }
       }
       .visualContact:hover {
-        background-color: rgba(68,57,45,0.6);
+        background-color: rgba(200,200,200,0.3);
       }
     }
   }
@@ -140,7 +142,7 @@
     display: table-cell;
     vertical-align: top;
     text-align: center;
-    padding-left: 30px;
+    padding-left: 20px;
     .businessInnerImg {
       width: 30px;
       height: 30px;
@@ -152,9 +154,9 @@
       letter-spacing: 0.2em;
     }
     .businessInnerText {
-      font-size: 12px;
+      font-size: 13px;
       color: #949494;
-      line-height: 1.6em;
+      line-height: 2em;
     }
   }
   .businessInner:first-child {

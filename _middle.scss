@@ -1,5 +1,5 @@
 /*==== Middle Size ====*/
-@media screen and (min-width: 498px) and (max-width: 767px) {
+@media screen and (min-width: 641px) and (max-width: 767px) {
 .layoutInner {
   margin: 0 auto;
   width: 90%;
@@ -62,9 +62,9 @@
 .visual {
   width: 100%;
   height: auto;
-  background-image: url(images/bg.png);
-  background-position: 0 30%;
-  background-size: 100% 150%;
+  background-image: url(images/pc_bg.png);
+  background-position: left top;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   .visualInner {
     height: 450px;
