@@ -204,7 +204,7 @@
   }
 }
 /*==== Middle Size ====*/
-@media screen and (min-width: 641px) and (max-width: 767px) {
+@media screen and (min-width: 641px) and (max-width: 860px) {
   .layoutInner {
     margin: 0 auto;
     width: 90%;
@@ -213,8 +213,8 @@
   /* header */
   .headerLogo {
     float: left;
-    padding-top: 15px;
-    font-size: 24px;
+    padding: 30px 0;
+    font-size: 35px;
     color: #FFF;
     font-weight: 400;
     letter-spacing: 0.08em;
@@ -223,27 +223,28 @@
   /* menu */
   .toggle {
     display: block;
-    width: 30px;
-    height: 30px;
-    background: #000;
+    background: #303030;
     position: absolute;
-    top: 15px;
+    top: 30px;
     right: 0;
   }
   .toggle .toggleBar {
     display: block;
-    width: 30px;
+    width: 45px;
     height: 0;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border: 0;
-    border-bottom: solid 3px #FFF;
+    border-bottom: solid 5px #FFF;
+  }
+  .toggle .toggleBar:last-child {
+    margin-bottom: 0;
   }
 
   .menu {
     display: none;
     width: 100%;
     position: absolute;
-    top: 50px;
+    top: 95px;
     left: 0;
   }
   .menu .menuList {
@@ -258,8 +259,8 @@
     font-weight: 300;
   }
   .menu .menuList .menuInner:hover {
-    border-bottom: 3px solid #7b6c63;
-    padding-bottom: 4px;
+    border-bottom: 5px solid #7b6c63;
+    padding-bottom: 10px;
   }
 
   /* visual */
@@ -272,34 +273,43 @@
     background-repeat: no-repeat;
   }
   .visual .visualInner {
-    height: 450px;
+    height: 550px;
   }
   .visual .visualInner .visualText {
-    padding-top: 100px;
+    padding-top: 150px;
     color: #FFF;
   }
+  .visual .visualInner .visualText .visualSubTitle {
+    font-size: 17px;
+  }
   .visual .visualInner .visualText .visualTitle {
-    margin: 5px 0 30px 0;
-    font-size: 40px;
+    margin: 30px 0 70px 0;
+  }
+  .visual .visualInner .visualText .visualTitle .visualTitleFont {
+    margin-bottom: 30px;
+    font-size: 47px;
     font-weight: 400;
-    line-height: 1.2em;
     letter-spacing: 0.08em;
   }
-  .visual .visualInner .visualText .visualTitle .visualTitleColor {
+  .visual .visualInner .visualText .visualTitle .visualTitleFont .visualTitleColor {
     color: #7b6c63;
   }
   .visual .visualInner .visualText .visualContact {
     display: block;
-    width: 200px;
-    padding: 15px 0px;
+    width: 265px;
+    height: 60px;
     text-align: center;
-    background-color: rgba(200, 200, 200, 0.2);
+    background-color: rgba(200, 200, 200, 0.1);
   }
   .visual .visualInner .visualText .visualContact .visualContactText {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    padding-top: 25px;
     color: #FFF;
   }
   .visual .visualInner .visualText .visualContact:hover {
-    background-color: rgba(200, 200, 200, 0.4);
+    background-color: rgba(200, 200, 200, 0.3);
   }
 
   /* content */
@@ -308,25 +318,25 @@
     height: auto;
   }
   .about .aboutInner {
-    width: 400px;
-    margin: 0 auto 30px auto;
+    width: 430px;
+    margin: 0 auto 90px auto;
     text-align: center;
   }
   .about .aboutInner .aboutTitle {
-    padding-bottom: 20px;
-    font-size: 30px;
+    padding-bottom: 50px;
+    font-size: 29px;
     color: #7b6c63;
-    font-weight: 400;
-    letter-spacing: 0.09em;
+    font-weight: 500;
+    letter-spacing: 0.2em;
   }
   .about .aboutInner .aboutTitleUnderLine {
     display: block;
-    width: 60px;
-    height: 1px;
+    width: 75px;
+    height: 0;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 45px;
     border: 0;
-    border-top: 3px solid #7b6c63;
+    border-top: 6px solid #7b6c63;
   }
   .about .aboutInner .aboutText {
     color: #000;
@@ -349,14 +359,15 @@
     height: 30px;
   }
   .business .businessInner .businessInnerTitle {
-    padding: 10px 0;
-    font-weight: 300;
-    letter-spacing: 0.08em;
+    padding: 25px 0;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
   }
   .business .businessInner .businessInnerText {
     font-size: 13px;
     color: #949494;
-    line-height: 1.6em;
+    line-height: 2em;
   }
   .business .businessInner:first-child {
     padding-left: 0;
@@ -368,23 +379,25 @@
   }
   .copyright .smallFont {
     font-size: 12px;
+    letter-spacing: 0.15em;
     color: #4d4d4d;
   }
 }
 /* PC Size  */
-@media screen and (min-width: 768px) and (min-width: 768px) and (max-width: 960px) {
+@media screen and (min-width: 861px) and (min-width: 861px) and (max-width: 960px) {
   .layoutInner {
     margin: 0 auto;
     width: 85%;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 961px) {
+@media screen and (min-width: 861px) and (min-width: 961px) {
   .layoutInner {
     margin: 0 auto;
     max-width: 1060px;
+    width: 90%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 861px) {
   /* header */
   .headerLogo {
     float: left;
