@@ -86,11 +86,12 @@
         display: block;
         width: 265px;
         height: 60px;
-        font-size: 12px;
         text-align: center;
         background-color: rgba(200, 200, 200, 0.1);
         .visualContactText {
           display: block;
+          font-size: 12px;
+          letter-spacing: 0.2em;
           padding-top: 25px;
           color: #FFF;
         }

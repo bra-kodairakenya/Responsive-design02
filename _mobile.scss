@@ -102,6 +102,8 @@
         background-color: rgba(200,200,200,0.1);
         .visualContactText {
           display: block;
+          font-size: 23px;
+          letter-spacing: 0.2em;
           padding-top: 30px;
           color: #FFF;
         }
@@ -119,24 +121,25 @@
   height: auto;
   .aboutInner {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     .aboutTitle {
-      padding-bottom: 20px;
-      font-size: 24px;
+      padding-bottom: 50px;
+      font-size: 37px;
       color: #7b6c63;
       font-weight: 400;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.2em;
     }
     .aboutTitleUnderLine {
       display: block;
-      width: 40px;
-      height: 1px;
+      width: 75px;
+      height: 0px;
       margin: 0 auto;
-      padding-bottom: 20px;
+      padding-bottom: 35px;
       border: 0;
-      border-top: 3px solid #7b6c63;
+      border-top: 6px solid #7b6c63;
     }
     .aboutText {
+      font-size: 28px;
       color: #000;
       line-height: 1.4em;
     }
@@ -146,22 +149,23 @@
 .business {
   text-align: center;
   .businessInner {
-    margin-bottom: 30px;
+    margin-bottom: 75px;
     .businessInnerImg {
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
     }
 
     .businessInnerTitle {
-      padding: 10px 0;
+      padding: 25px 0;
+      font-size: 26px;
       font-weight: 300;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.2em;
     }
 
     .businessInnerText {
-      font-size: 14px;
+      font-size: 24px;
       color: #949494;
-      line-height: 1.5em;
+      line-height: 1.4em;
     }
   }
   .businessInner:last-child {
@@ -174,6 +178,7 @@
   text-align: center;
   .smallFont {
     font-size: 12px;
+    letter-spacing: 0.15em;
     color: #4d4d4d;
   }
 }
