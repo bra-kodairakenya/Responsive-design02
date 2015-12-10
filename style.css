@@ -1,7 +1,14 @@
-/*======= common ========*/
+/*======= Common Color =========*/
+/*======= Common Layout ========*/
 .body {
   font-size: 16px;
   line-height: 1;
+}
+
+.layoutInner {
+  margin: 0 auto;
+  max-width: 1060px;
+  width: 90%;
 }
 
 #header {
@@ -27,11 +34,6 @@
 /*============ Device ==========*/
 /*===== Mobile Small Size =====*/
 @media screen and (max-width: 460px) {
-  .layoutInner {
-    margin: 0 auto;
-    width: 90%;
-  }
-
   /* header */
   .headerLogo {
     float: left;
@@ -79,6 +81,7 @@
     font-size: 24px;
     color: #FFF;
     font-weight: 300;
+    letter-spacing: 0.12em;
   }
   .menu .menuList .menuInner:hover {
     border-bottom: 5px solid #7b6c63;
@@ -205,11 +208,6 @@
 }
 /*===== Mobile Large Size =====*/
 @media screen and (min-width: 461px) and (max-width: 640px) {
-  .layoutInner {
-    margin: 0 auto;
-    width: 90%;
-  }
-
   /* header */
   .headerLogo {
     float: left;
@@ -257,6 +255,7 @@
     font-size: 24px;
     color: #FFF;
     font-weight: 300;
+    letter-spacing: 0.12em;
   }
   .menu .menuList .menuInner:hover {
     border-bottom: 5px solid #7b6c63;
@@ -383,11 +382,6 @@
 }
 /*==== Middle Size ====*/
 @media screen and (min-width: 641px) and (max-width: 860px) {
-  .layoutInner {
-    margin: 0 auto;
-    width: 90%;
-  }
-
   /* header */
   .headerLogo {
     float: left;
@@ -432,9 +426,11 @@
     padding-top: 20px;
   }
   .menu .menuList .menuInner {
+    display: block;
     font-size: 24px;
     color: #FFF;
     font-weight: 300;
+    letter-spacing: 0.12em;
   }
   .menu .menuList .menuInner:hover {
     border-bottom: 5px solid #7b6c63;
@@ -508,7 +504,6 @@
     letter-spacing: 0.2em;
   }
   .about .aboutInner .aboutTitleUnderLine {
-    display: block;
     width: 75px;
     height: 0;
     margin: 0 auto;
@@ -562,19 +557,6 @@
   }
 }
 /* PC Size  */
-@media screen and (min-width: 861px) and (min-width: 861px) and (max-width: 960px) {
-  .layoutInner {
-    margin: 0 auto;
-    width: 85%;
-  }
-}
-@media screen and (min-width: 861px) and (min-width: 961px) {
-  .layoutInner {
-    margin: 0 auto;
-    max-width: 1060px;
-    width: 90%;
-  }
-}
 @media screen and (min-width: 861px) {
   /* header */
   .headerLogo {
@@ -600,12 +582,13 @@
     display: table-cell;
     vertical-align: top;
     text-align: right;
-    padding-left: 40px;
+    padding-left: 35px;
   }
   .nav .menu .menuList .menuInner {
     font-size: 14px;
     color: #FFF;
     font-weight: 300;
+    letter-spacing: 0.12em;
   }
   .nav .menu .menuList .menuInner:hover {
     border-bottom: 5px solid #7b6c63;

@@ -1,11 +1,6 @@
 /*===== Mobile Large Size =====*/
 @media screen and (min-width: 461px) and (max-width: 640px) {
 
-.layoutInner {
-  margin: 0 auto;
-  width: 90%;
-}
-
 /* header */
 .headerLogo {
   float: left;
@@ -19,7 +14,7 @@
 /* menu */
 .toggle{
   display: block;
-  background: #303030;
+  background: $c-headerBg;
   position: absolute;
   top: 30px;
   right: 0;
@@ -44,17 +39,18 @@
   left: 0;
   .menuList {
     text-align: center;
-    background-color: #303030;
+    background-color: $c-headerBg;
     height: 50px;
     padding-top: 20px;
     .menuInner {
       font-size: 24px;
       color: #FFF;
       font-weight: 300;
+      letter-spacing: 0.12em;
     }
 
     .menuInner:hover {
-      border-bottom: 5px solid #7b6c63;
+      border-bottom: 5px solid $c-menuHover;
       padding-bottom: 10px;
     }
   }
@@ -179,7 +175,7 @@
   .smallFont {
     font-size: 12px;
     letter-spacing: 0.15em;
-    color: #4d4d4d;
+    color: $c-copyright;
   }
 }
 

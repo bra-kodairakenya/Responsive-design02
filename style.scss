@@ -1,11 +1,23 @@
-/*======= common ========*/
+/*======= Common Color =========*/
+$c-headerBg: #303030;
+$c-menuHover: #7b6c63;
+$c-copyright: #4d4d4d;
+
+
+/*======= Common Layout ========*/
 .body {
   font-size: 16px;
   line-height: 1;
 }
 
+.layoutInner {
+  margin: 0 auto;
+  max-width: 1060px;
+  width: 90%;
+}
+
 #header {
-  background-color: #303030;
+  background-color: $c-headerBg;
   .headerInner {
     height: 95px;
     position: relative;
