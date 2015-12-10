@@ -50,7 +50,7 @@
     }
 
     .menuInner:hover {
-      border-bottom: 5px solid $c-menuHover;
+      border-bottom: 5px solid $c-Accent;
       padding-bottom: 10px;
     }
   }
@@ -80,7 +80,7 @@
           font-weight: 400;
           letter-spacing: 0.08em;
           .visualTitleColor {
-            color: #7b6c63;
+            color: $c-Accent;
           }
         }
       }
@@ -89,7 +89,7 @@
         width: 265px;
         height: 60px;
         text-align: center;
-        background-color: rgba(200, 200, 200, 0.1);
+        background-color: $c-visualContact;
         .visualContactText {
           display: block;
           font-size: 12px;
@@ -99,7 +99,7 @@
         }
       }
       .visualContact:hover {
-        background-color: rgba(200,200,200,0.3);
+        background-color: $c-visualContactHover;
       }
     }
   }
@@ -117,7 +117,7 @@
     .aboutTitle {
       padding-bottom: 50px;
       font-size: 29px;
-      color: #7b6c63;
+      color: $c-aboutTitle;
       font-weight: 500;
       letter-spacing: 0.2em;
     }
@@ -127,7 +127,7 @@
       margin: 0 auto;
       padding-bottom: 45px;
       border: 0;
-      border-top: 6px solid #7b6c63;
+      border-top: 6px solid $c-Accent;
     }
     .aboutText {
       color: #000;
@@ -157,7 +157,7 @@
     }
     .businessInnerText {
       font-size: 13px;
-      color: #949494;
+      color: $c-businessInnerText;
       line-height: 2em;
     }
   }
