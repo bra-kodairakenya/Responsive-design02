@@ -25,8 +25,186 @@
 }
 
 /*============ Device ==========*/
-/*===== Mobile Size =====*/
-@media screen and (max-width: 640px) {
+/*===== Mobile Small Size =====*/
+@media screen and (max-width: 460px) {
+  .layoutInner {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  /* header */
+  .headerLogo {
+    float: left;
+    padding: 30px 0;
+    font-size: 35px;
+    color: #FFF;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+  }
+
+  /* menu */
+  .toggle {
+    display: block;
+    background: #303030;
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+  .toggle .toggleBar {
+    display: block;
+    width: 45px;
+    height: 0;
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: solid 5px #FFF;
+  }
+  .toggle .toggleBar:last-child {
+    margin-bottom: 0;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 95px;
+    left: 0;
+  }
+  .menu .menuList {
+    text-align: center;
+    background-color: #303030;
+    height: 50px;
+    padding-top: 20px;
+  }
+  .menu .menuList .menuInner {
+    font-size: 24px;
+    color: #FFF;
+    font-weight: 300;
+  }
+  .menu .menuList .menuInner:hover {
+    border-bottom: 5px solid #7b6c63;
+    padding-bottom: 10px;
+  }
+
+  /* visual */
+  .visual {
+    width: 100%;
+    height: auto;
+    background-image: url(images/sp_bg.png);
+    background-position: left top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .visual .visualInner {
+    height: 675px;
+  }
+  .visual .visualInner .visualText {
+    text-align: center;
+    padding-top: 200px;
+    color: #FFF;
+  }
+  .visual .visualInner .visualText .visualSubTitle {
+    display: none;
+  }
+  .visual .visualInner .visualText .visualTitle {
+    margin-bottom: 100px;
+  }
+  .visual .visualInner .visualText .visualTitle .visualTitleFont {
+    margin-bottom: 30px;
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 1.2em;
+    letter-spacing: 0.2em;
+  }
+  .visual .visualInner .visualText .visualTitle .visualTitleFont .visualTitleColor {
+    color: #7b6c63;
+  }
+  .visual .visualInner .visualText .visualContact {
+    display: block;
+    width: 280px;
+    height: 75px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(200, 200, 200, 0.1);
+  }
+  .visual .visualInner .visualText .visualContact .visualContactText {
+    display: block;
+    font-size: 23px;
+    letter-spacing: 0.2em;
+    padding-top: 30px;
+    color: #FFF;
+  }
+  .visual .visualInner .visualText .visualContact:hover {
+    background-color: rgba(200, 200, 200, 0.3);
+  }
+
+  /* content */
+  .about {
+    width: 100%;
+    height: auto;
+  }
+  .about .aboutInner {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .about .aboutInner .aboutTitle {
+    padding-bottom: 50px;
+    font-size: 37px;
+    color: #7b6c63;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+  }
+  .about .aboutInner .aboutTitleUnderLine {
+    display: block;
+    width: 75px;
+    height: 0px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+    border: 0;
+    border-top: 6px solid #7b6c63;
+  }
+  .about .aboutInner .aboutText {
+    font-size: 28px;
+    color: #000;
+    line-height: 1.4em;
+  }
+
+  .business {
+    text-align: center;
+  }
+  .business .businessInner {
+    margin-bottom: 75px;
+  }
+  .business .businessInner .businessInnerImg {
+    width: 30px;
+    height: 30px;
+  }
+  .business .businessInner .businessInnerTitle {
+    padding: 25px 0;
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+  }
+  .business .businessInner .businessInnerText {
+    font-size: 24px;
+    color: #949494;
+    line-height: 1.4em;
+  }
+  .business .businessInner:last-child {
+    margin-bottom: 0;
+  }
+
+  /* footer */
+  .copyright {
+    text-align: center;
+  }
+  .copyright .smallFont {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: #4d4d4d;
+  }
+}
+/*===== Mobile Large Size =====*/
+@media screen and (min-width: 461px) and (max-width: 640px) {
   .layoutInner {
     margin: 0 auto;
     width: 90%;
